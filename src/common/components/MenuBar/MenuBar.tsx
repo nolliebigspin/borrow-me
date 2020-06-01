@@ -13,9 +13,9 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonReactRouter } from '@ionic/react-router';
 import { person, home, chatbubbles } from 'ionicons/icons';
 
-import Tab1 from '../../pages/Tab1';
-import Tab2 from '../../pages/Tab2';
-import Tab3 from '../../pages/Tab3';
+import Tab1 from '../../../pages/Tab1';
+import Tab2 from '../../../pages/Tab2';
+import Tab3 from '../../../pages/Tab3';
 
 const MenuBar: React.FC = () => {
   return (

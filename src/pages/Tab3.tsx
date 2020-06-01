@@ -1,7 +1,6 @@
 import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
-import { Button, Header } from '../components';
-import './Tab3.css';
+import { Button, Header } from '../common/components';
 
 const Tab3: React.FC = () => {
   return (

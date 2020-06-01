@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonApp } from '@ionic/react';
 
-import { MenuBar, Header } from './components'
+import { MenuBar, Header } from './common/components'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
