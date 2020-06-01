@@ -1,22 +1,13 @@
 import React from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import {Button} from '../components';
+import { IonContent, IonPage } from '@ionic/react';
+import { Button, Header } from '../components';
 import './Tab1.css';
 
 const Tab1: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Tab 1</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+      <Header title={"BorrowMe"} />
       <IonContent>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
-          </IonToolbar>
-        </IonHeader>
         <Button label="Button 1" />
       </IonContent>
     </IonPage>
