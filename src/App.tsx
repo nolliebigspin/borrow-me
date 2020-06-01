@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 
-import { MenuBar, Header } from './common/components'
+import { Header, MenuBar } from './common/components';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -44,7 +44,7 @@ const App: React.FC = () => (
           <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
         </IonRouterOutlet>
       </IonReactRouter>
-    <MenuBar />
+      <MenuBar />
   </IonApp>
 );
 

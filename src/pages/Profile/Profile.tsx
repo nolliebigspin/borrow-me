@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
-import { Header } from '../../common/components';
+import { Header, MenuBar } from '../../common/components';
 
 const Profile: React.FC = () => {
   return (
@@ -8,6 +8,7 @@ const Profile: React.FC = () => {
       <Header title={"BorrowMe"} />
       <IonContent color="light">
       </IonContent>
+      <MenuBar />
     </IonPage>
   );
 };
