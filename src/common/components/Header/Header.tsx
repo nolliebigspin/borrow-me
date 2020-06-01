@@ -9,7 +9,7 @@ const Header: React.FC<ContainerProps> = ({ title }) => {
   return (
     <IonHeader>
       <IonToolbar color="primary">
-        <IonTitle>Primary</IonTitle>
+        <IonTitle color="light">Primary</IonTitle>
       </IonToolbar>
     </IonHeader>
   );

@@ -1,13 +1,14 @@
 import React from 'react';
-import { IonContent, IonPage } from '@ionic/react';
-import { Button, Header } from '../../common/components';
+import { IonContent, IonPage, IonButton } from '@ionic/react';
+import { Header } from '../../common/components';
 
 const Profile: React.FC = () => {
   return (
     <IonPage>
       <Header title={"BorrowMe"} />
-      <IonContent>
-        <Button label="Button 1" />
+      <IonContent color="light">
+        <IonButton color="secondary">Einloggen</IonButton>
+        <IonButton color="secondary">Registrieren</IonButton>
       </IonContent>
     </IonPage>
   );
