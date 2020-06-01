@@ -8,8 +8,8 @@ interface ContainerProps {
 const Header: React.FC<ContainerProps> = ({ title }) => {
   return (
     <IonHeader>
-      <IonToolbar>
-        <IonTitle>{title}</IonTitle>
+      <IonToolbar color="primary">
+        <IonTitle>Primary</IonTitle>
       </IonToolbar>
     </IonHeader>
   );
