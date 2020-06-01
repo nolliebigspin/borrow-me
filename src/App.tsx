@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 
-import { Header, MenuBar } from './common/components';
+import { Header } from './common/components';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -29,22 +29,23 @@ import Profile from './pages/Profile/Profile';
 import Home from './pages/Home/Home';
 import Feed from './pages/Feed/Feed';
 import Messages from './pages/Messages/Messages';
+import Login from './pages/Login/Login';
 import { IonReactRouter } from '@ionic/react-router';
 
 
 const App: React.FC = () => (
   <IonApp>
     <Header title={"BorrowMe"} />
-      <IonReactRouter>
-        <IonRouterOutlet>
-          <Route path="/profile" component={Profile} />
-          <Route path="/home" component={Home} />
-          <Route path="/feed" component={Feed} />
-          <Route path="/messages" component={Messages} />
-          <Route path="/" render={() => <Redirect to="/home" />} exact={true} />
-        </IonRouterOutlet>
-      </IonReactRouter>
-      <MenuBar />
+    <IonReactRouter>
+      <IonRouterOutlet>
+        <Route path="/profile" component={Profile} />
+        <Route path="/home" component={Home} />
+        <Route path="/feed" component={Feed} />
+        <Route path="/messages" component={Messages} />
+        <Route path="/login" component={Login} />
+        <Route path="/" render={() => <Redirect to="/login" />} exact={true} />
+      </IonRouterOutlet>
+    </IonReactRouter>
   </IonApp>
 );
 
