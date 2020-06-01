@@ -1,3 +1,4 @@
 import Button from './Button/Button';
+import MenuBar from './MenuBar/MenuBar'
 
-export default Button;
+export {Button, MenuBar};
