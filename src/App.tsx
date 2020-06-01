@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonApp } from '@ionic/react';
 
-import { MenuBar } from './components'
+import { MenuBar, Header } from './components'
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -24,6 +24,7 @@ import './theme/variables.css';
 
 const App: React.FC = () => (
   <IonApp>
+    <Header title={"BorrowMe"} />
     <MenuBar />
   </IonApp>
 );
