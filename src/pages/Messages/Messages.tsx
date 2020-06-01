@@ -1,16 +1,16 @@
 import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
-import { Button, Header } from '../common/components';
+import { Button, Header } from '../../common/components';
 
-const Tab1: React.FC = () => {
+const Messages: React.FC = () => {
   return (
     <IonPage>
       <Header title={"BorrowMe"} />
       <IonContent>
-        <Button label="Button 1" />
+        <Button label="Button 4" />
       </IonContent>
     </IonPage>
   );
 };
 
-export default Tab1;
+export default Messages;

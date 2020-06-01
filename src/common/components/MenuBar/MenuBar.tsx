@@ -11,20 +11,22 @@ import {
 
 import { Redirect, Route } from 'react-router-dom';
 import { IonReactRouter } from '@ionic/react-router';
-import { person, home, chatbubbles } from 'ionicons/icons';
+import { person, home, chatbubbles, mail } from 'ionicons/icons';
 
-import Tab1 from '../../../pages/Tab1';
-import Tab2 from '../../../pages/Tab2';
-import Tab3 from '../../../pages/Tab3';
+import Profile from '../../../pages/Profile/Profile';
+import Home from '../../../pages/Home/Home';
+import Feed from '../../../pages/Feed/Feed';
+import Messages from '../../../pages/Messages/Messages';
 
 const MenuBar: React.FC = () => {
   return (
     <IonReactRouter>
     <IonTabs>
       <IonRouterOutlet>
-        <Route path="/profile" component={Tab1} />
-        <Route path="/home" component={Tab2} />
-        <Route path="/feed" component={Tab3} />
+        <Route path="/profile" component={Profile} />
+        <Route path="/home" component={Home} />
+        <Route path="/feed" component={Feed} />
+        <Route path="/messages" component={Messages} />
         <Route path="/" render={() => <Redirect to="/tab1" />} exact={true} />
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
@@ -36,6 +38,9 @@ const MenuBar: React.FC = () => {
         </IonTabButton>
         <IonTabButton tab="feed" href="/feed">
           <IonIcon icon={chatbubbles} />
+        </IonTabButton>
+        <IonTabButton tab="messages" href="/messages">
+          <IonIcon icon={mail} />
         </IonTabButton>
       </IonTabBar>
     </IonTabs>

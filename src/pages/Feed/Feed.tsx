@@ -1,8 +1,8 @@
 import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
-import { Button, Header } from '../common/components';
+import { Button, Header } from '../../common/components';
 
-const Tab3: React.FC = () => {
+const Feed: React.FC = () => {
   return (
     <IonPage>
       <Header title={"BorrowMe"} />
@@ -13,4 +13,4 @@ const Tab3: React.FC = () => {
   );
 };
 
-export default Tab3;
+export default Feed;
