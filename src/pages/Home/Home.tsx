@@ -6,7 +6,7 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <Header title={"BorrowMe"} />
-      <IonContent>
+      <IonContent color="light">
       </IonContent>
     </IonPage>
   );
