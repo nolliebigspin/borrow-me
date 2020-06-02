@@ -1,20 +1,27 @@
 import React, { useState } from 'react';
 import { IonContent, IonPage, IonButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonInput, IonGrid, IonRow, IonCol } from '@ionic/react';
 import { Header } from '../../common/components';
+import { useHistory } from 'react-router';
 
 const LIST_OF_USERS = ["Alec", "Alex", "Leonard", "Rafael"];
 
 const Login: React.FC = () => {
+  const history = useHistory();
   const [userName, setUserName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
-  const checkRegistration = (): boolean => {
+  const checkLogin = (): any => {
     if (LIST_OF_USERS.includes(userName) && password === "Hallo123") {
       console.log("Login succeed!");
-      return true;
+      history.push("/home")
     } else {
       console.log("Login failed!");
-      return false;
+    }
+  }
+
+  const handleKeyDown = (e: any): void => {
+    if (e.key === "Enter") {
+      checkLogin();
     }
   }
   return (
@@ -36,14 +43,14 @@ const Login: React.FC = () => {
           </IonCardContent>
         </IonCard>
         <IonInput value={userName} placeholder="Benutzername" onIonChange={e => setUserName(e.detail.value!)}></IonInput>
-        <IonInput value={password} placeholder="Passwort" type="password" onIonChange={e => setPassword(e.detail.value!)}></IonInput>
+        <IonInput value={password} placeholder="Passwort" type="password" onKeyDown={e => handleKeyDown(e)} onIonChange={e => setPassword(e.detail.value!)}></IonInput>
         <IonGrid>
           <IonRow>
             <IonCol>
-            <IonButton color="secondary" routerLink="/home">Einloggen</IonButton>
+            <IonButton color="secondary" onClick={checkLogin}>Einloggen</IonButton>
             </IonCol>
             <IonCol>
-            <IonButton color="secondary" onClick={checkRegistration}>Registrieren</IonButton>
+            <IonButton color="secondary" routerLink="/home">Registrieren</IonButton>
             </IonCol>
           </IonRow>
         </IonGrid>
