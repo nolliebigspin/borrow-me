@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonPage, IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent } from '@ionic/react';
+import { IonContent, IonPage, IonButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
 import { Header } from '../../common/components';
 
 const Login: React.FC = () => {
@@ -21,8 +21,8 @@ const Login: React.FC = () => {
             3) Wissensaustausch
           </IonCardContent>
         </IonCard>
-        <IonButton color="secondary" href="/home">Einloggen</IonButton>
-        <IonButton color="secondary">Registrieren</IonButton>
+        <IonButton color="secondary" routerLink="/home">Einloggen</IonButton>
+        <IonButton color="secondary" routerLink="/home">Registrieren</IonButton>
       </IonContent>
     </IonPage>
   );
