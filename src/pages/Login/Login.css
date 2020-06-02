@@ -1,0 +1,8 @@
+.Button {
+  margin: 5vw;
+  display: block;
+}
+.Input {
+  border-color: grey;
+  border-width: 1;
+}
