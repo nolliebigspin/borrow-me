@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonPage, IonButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonInput, IonGrid, IonRow, IonCol } from '@ionic/react';
+import { IonContent, IonPage, IonButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonInput, IonGrid, IonRow, IonCol, IonAlert } from '@ionic/react';
 import { Header } from '../../common/components';
 import { useHistory } from 'react-router';
 
@@ -11,6 +11,8 @@ const Login: React.FC = () => {
   const history = useHistory();
   const [userName, setUserName] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const [loginFailed, setLoginFailed] = useState(false);
+
 
   const checkLogin = (): any => {
     if (LIST_OF_USERS.includes(userName) && password === "Hallo123") {
@@ -18,6 +20,7 @@ const Login: React.FC = () => {
       history.push("/home")
     } else {
       console.log("Login failed!");
+      setLoginFailed(true);
     }
   }
 
@@ -51,6 +54,18 @@ const Login: React.FC = () => {
         <IonCard color="light">
           <IonInput className="Input" value={password} placeholder="Passwort" type="password" onKeyDown={e => handleKeyDown(e)} onIonChange={e => setPassword(e.detail.value!)}></IonInput>
         </IonCard>
+        {loginFailed ? (
+          <IonAlert
+            cssClass="my-custom-class"
+            isOpen={loginFailed}
+            onDidDismiss={() => setLoginFailed(false)}
+            header={'Login failed!'}
+            message={'Please enter a correct login.'}
+            buttons={['OK']}
+          />
+        ) : ( 
+          null
+        )}
         <IonGrid>
           <IonRow>
             <IonCol>
