@@ -1,8 +1,10 @@
-import React from 'react';
-import { IonContent, IonPage, IonButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent } from '@ionic/react';
+import React, { useState } from 'react';
+import { IonContent, IonPage, IonButton, IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonInput, IonGrid, IonRow, IonCol } from '@ionic/react';
 import { Header } from '../../common/components';
 
 const Login: React.FC = () => {
+  const [userName, setUserName] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
   return (
     <IonPage>
       <Header title={"BorrowMe"} />
@@ -21,8 +23,20 @@ const Login: React.FC = () => {
             3) Wissensaustausch
           </IonCardContent>
         </IonCard>
-        <IonButton color="secondary" routerLink="/home">Einloggen</IonButton>
-        <IonButton color="secondary" routerLink="/home">Registrieren</IonButton>
+        <IonInput value={userName} placeholder="Benutzername" onIonChange={e => setUserName(e.detail.value!)}></IonInput>
+        <IonInput value={password} placeholder="Passwort" onIonChange={e => setPassword(e.detail.value!)}></IonInput>
+        <IonGrid>
+          <IonRow>
+            <IonCol>
+            <IonButton color="secondary" routerLink="/home">Einloggen</IonButton>
+            </IonCol>
+            <IonCol>
+            <IonButton color="secondary" routerLink="/home">Registrieren</IonButton>
+            </IonCol>
+          </IonRow>
+        </IonGrid>
+        
+        
       </IonContent>
     </IonPage>
   );
