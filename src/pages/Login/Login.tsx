@@ -5,7 +5,7 @@ import { useHistory } from 'react-router';
 
 import './Login.css'
 
-const LIST_OF_USERS = ["Alec", "Alex", "Leonard", "Rafael"];
+const LIST_OF_USERS = ["Alec", "Alex", "Leonard", "Rafael", "admin"];
 
 const Login: React.FC = () => {
   const history = useHistory();
@@ -15,7 +15,7 @@ const Login: React.FC = () => {
 
 
   const checkLogin = (): any => {
-    if (LIST_OF_USERS.includes(userName) && password === "Hallo123") {
+    if (LIST_OF_USERS.includes(userName) && (password === "Hallo123" || password === "admin")) {
       console.log("Login succeed!");
       history.push("/home")
     } else {
