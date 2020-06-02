@@ -35,8 +35,6 @@ const Login: React.FC = () => {
             </IonCol>
           </IonRow>
         </IonGrid>
-        
-        
       </IonContent>
     </IonPage>
   );
