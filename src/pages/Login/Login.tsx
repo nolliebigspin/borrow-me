@@ -77,7 +77,7 @@ const Login: React.FC = () => {
             </IonCol>
           </IonRow>
         </IonGrid>
-        <ChatBubble text="Hallo" image="sarah"/>
+        <ChatBubble text="Die ist eine Testnachricht mit mehreren Zeilen Text!" image="sarah"/>
       </IonContent>
     </IonPage>
   );
