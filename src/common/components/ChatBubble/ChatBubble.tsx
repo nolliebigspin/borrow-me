@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ChatBubble.css'
-import { IonAvatar, IonGrid, IonRow } from '@ionic/react';
+import { IonAvatar, IonGrid, IonRow, IonIcon } from '@ionic/react';
+import { thumbsUp, thumbsUpOutline } from 'ionicons/icons';
 
 
 interface ContainerProps {
@@ -10,6 +11,13 @@ interface ContainerProps {
 }
 
 const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
+
+  const [isFilled, setisFilled] = useState<boolean>(false);
+
+  const switchFilled = (): void => {
+    setisFilled(!isFilled);
+  }
+
   return (
     <div>
       {left ? (
@@ -22,6 +30,13 @@ const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
             <div className="talk-bubble round shadow">
               <div className="talktext">
                 <p>{text}</p>
+                {
+                  isFilled ? (
+                    <IonIcon icon={thumbsUp}  onClick={switchFilled} />
+                  ) : (
+                    <IonIcon icon={thumbsUpOutline}  onClick={switchFilled} />
+                  )
+                }
               </div>
             </div>
           </IonRow>
