@@ -7,6 +7,7 @@ interface ContainerProps {
   text: string;
   left: boolean;
   image?: string;
+  widht?: string;
 }
 
 const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
