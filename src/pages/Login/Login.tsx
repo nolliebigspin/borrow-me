@@ -77,7 +77,21 @@ const Login: React.FC = () => {
             </IonCol>
           </IonRow>
         </IonGrid>
-        <ChatBubble text="Die ist eine Testnachricht mit mehreren Zeilen Text!" image="sarah"/>
+        <ChatBubble
+          left={true}
+          text="Hi! Ist die Bohmaschine gerade zu haben?"
+          image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+        />
+        <ChatBubble
+          left={false}
+          text="Klar doch, kannst sie gerne morgen abholen kommen :)"
+          image="https://images.unsplash.com/photo-1466112928291-0903b80a9466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+        />
+        <ChatBubble
+          left={true}
+          text="Oh super, vielen Dank! Ich komme dann gehen 10 Uhr am Vormittag. Muss ich sonst noch was mitbringen?"
+          image="https://images.unsplash.com/photo-1584588500638-e92b3702ff3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
+        />
       </IonContent>
     </IonPage>
   );

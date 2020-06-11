@@ -1,10 +1,16 @@
-.base {
+.baseLeft {
+  margin-left: 2vw;
+}
+.baseRight {
   margin-left: 25vw;
 }
+.row {
+  margin-bottom: 2vh;
+}
 .talk-bubble {
-	width: 50vw;
-	height: auto;
-  background-color: white;
+  width: 50vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 .round{
   border-radius: 10px;
