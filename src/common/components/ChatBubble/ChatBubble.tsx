@@ -11,7 +11,7 @@ interface ContainerProps {
 const ChatBubble: React.FC<ContainerProps> = ({ text, image }) => {
   return (
     <div className="base">
-      <div className="talk-bubble tri-right round right-in">
+      <div className="talk-bubble round">
         <div className="talktext">
           <p>{text}</p>
         </div>
