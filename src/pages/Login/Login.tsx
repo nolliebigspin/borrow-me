@@ -4,6 +4,7 @@ import { Header } from '../../common/components';
 import { useHistory } from 'react-router';
 
 import './Login.css'
+import ChatBubble from '../../common/components/ChatBubble/ChatBubble';
 
 const LIST_OF_USERS = ["Alec", "Alex", "Leonard", "Rafael", "admin"];
 
@@ -76,6 +77,7 @@ const Login: React.FC = () => {
             </IonCol>
           </IonRow>
         </IonGrid>
+        <ChatBubble text="Hallo" image="sarah"/>
       </IonContent>
     </IonPage>
   );
