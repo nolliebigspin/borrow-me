@@ -1,7 +1,6 @@
 import React from 'react';
 import './ChatBubble.css'
-import { IonAvatar } from '@ionic/react';
-import { Grid, Row, Col } from 'react-flexbox-grid';
+import { IonAvatar, IonGrid, IonRow } from '@ionic/react';
 
 
 interface ContainerProps {
@@ -15,8 +14,8 @@ const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
     <div>
       {left ? (
         <div className="baseLeft">
-        <Grid fluid>
-          <Row className="row">
+        <IonGrid>
+          <IonRow>
             <IonAvatar className="shadow">
               <img src={image} alt="" />
             </IonAvatar>
@@ -25,13 +24,13 @@ const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
                 <p>{text}</p>
               </div>
             </div>
-          </Row>
-        </Grid>
+          </IonRow>
+        </IonGrid>
       </div>
       ) : (
         <div className="baseRight">
-        <Grid fluid>
-          <Row>
+        <IonGrid>
+          <IonRow>
             <div className="talk-bubble round shadow">
               <div className="talktext">
                 <p>{text}</p>
@@ -40,8 +39,8 @@ const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
             <IonAvatar className="shadow">
               <img src={image} alt="" />
             </IonAvatar>
-          </Row>
-        </Grid>
+          </IonRow>
+        </IonGrid>
       </div>
       )}
     </div>
