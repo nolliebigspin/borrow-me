@@ -35,9 +35,8 @@ const Feed: React.FC = () => {
               left={true}
               text="Hey! Ich hab eine hier rumliegen, kannst heute jederzeit vorbei schauen! Meine Adresse schalte ich dir frei :)"
               image="https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=681&q=80"
-          />
-          
-        </IonContent>  
+          />        
+        </IonContent>
       <MenuBar />
     </IonPage>
   );
