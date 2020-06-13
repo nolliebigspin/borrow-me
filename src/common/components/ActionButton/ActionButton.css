@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    font-size: 25;
+    font-weight: bold;
+    background-color: #0092FF;
+    color: white;
+     
+}
