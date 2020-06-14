@@ -1,5 +1,6 @@
 import React from 'react';
 import { IonHeader, IonTitle, IonToolbar } from '@ionic/react';
+import './Header.css';
 
 interface ContainerProps {
   title: string;
@@ -7,9 +8,9 @@ interface ContainerProps {
 
 const Header: React.FC<ContainerProps> = ({ title }) => {
   return (
-    <IonHeader>
+    <IonHeader className="header">
       <IonToolbar color="primary">
-        <IonTitle color="light">{title}</IonTitle>
+        <IonTitle className="text" color="light">{title}</IonTitle>
       </IonToolbar>
     </IonHeader>
   );

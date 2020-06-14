@@ -14,7 +14,7 @@ import { person, home, chatbubbles, mail } from 'ionicons/icons';
 const MenuBar: React.FC = () => {
   return (
     <IonReactRouter>
-      <IonTabBar slot="bottom">
+      <IonTabBar className="menuBar" slot="bottom">
         <IonTabButton tab="profile" href="/profile">
           <IonIcon icon={person} />
         </IonTabButton>
