@@ -9,7 +9,6 @@ const Home: React.FC = () => {
     <IonPage>
       <Header title={"BorrowMe"} />
       <IonContent color="light">
-      <SendMessageField/>
       </IonContent>
       <MenuBar />
     </IonPage>
