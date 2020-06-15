@@ -1,22 +1,40 @@
 import React from 'react';
 import './ProductCard.css'
-import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol } from '@ionic/react';
+import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText } from '@ionic/react';
 
+interface props {
+  title: string;
+  description?: string;
+  category?: string;
+  distance?: string;
+}
 
-const ProductCard: React.FC = () => {
+const ProductCard: React.FC<props> = ({ title, description, category, distance }) => {
 
   return (
     <IonCard color="light">
       <IonGrid>
         <IonRow>
           <IonCol>
-            <IonImg src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80" />
+            <IonImg className="image" src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80" />
           </IonCol>
           <IonCol>
             <div>
-              <IonCardTitle >Bohrmaschine</IonCardTitle>
+              <IonCardTitle >{title}</IonCardTitle>
               <IonCardContent>
-                Eine bestimmt nicht geklaute Bohrmaschine, die manchmal etwas qualmt. Sonst ist diese aber im Gut Zustand
+                <IonRow>
+                  <IonCol>
+                    <IonChip color="secondary">
+                      <IonLabel>{category}</IonLabel>
+                    </IonChip>
+                  </IonCol>
+                  <IonCol>
+                    <IonChip color="secondary">
+                      <IonLabel>{distance} km</IonLabel>
+                    </IonChip>
+                  </IonCol>
+                </IonRow>
+              <IonText>{description}</IonText>
               </IonCardContent>
             </div>
           </IonCol>

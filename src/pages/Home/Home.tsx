@@ -9,7 +9,12 @@ const Home: React.FC = () => {
     <IonPage>
       <Header title={"BorrowMe"} />
       <IonContent color="light">
-        <ProductCard />
+        <ProductCard 
+          title="Bohrmaschine"
+          description="Eine tolle und gelbe Bohrmaschine"
+          distance="3"
+          category="Werkzeug"
+        />
       </IonContent>
       <MenuBar />
     </IonPage>
