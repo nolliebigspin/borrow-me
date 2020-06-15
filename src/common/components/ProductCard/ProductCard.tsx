@@ -21,7 +21,7 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
           </IonCol>
           <IonCol>
             <div>
-              <IonCardTitle>{title}</IonCardTitle>
+              <IonCardTitle className="title">{title}</IonCardTitle>
               <IonCardContent>
                 <IonRow>
                   <IonCol>

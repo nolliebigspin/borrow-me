@@ -15,14 +15,12 @@ const ProductFull: React.FC<props> = ({ title, image, description, category, dis
 
   return (
     <IonCard color="light">
-      <IonGrid>
-        <IonRow>
           <IonCol>
             <IonImg className="image" src={image} />
           </IonCol>
           <IonCol>
             <div>
-              <IonCardTitle>{title}</IonCardTitle>
+              <IonCardTitle className="title">{title}</IonCardTitle>
               <IonCardContent>
                 <IonRow>
                   <IonCol>
@@ -44,8 +42,6 @@ const ProductFull: React.FC<props> = ({ title, image, description, category, dis
               </IonCardContent>
             </div>
           </IonCol>
-        </IonRow>
-      </IonGrid>
     </IonCard>
   );
 };
