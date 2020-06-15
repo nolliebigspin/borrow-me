@@ -1,0 +1,31 @@
+.baseLeft {
+  margin-left: 2vw;
+}
+.baseRight {
+  margin-left: 25vw;
+}
+.row {
+  margin-bottom: 2vh;
+}
+.talk-bubble {
+  width: 50vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+.round{
+  border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+/* talk bubble contents */
+.talktext{
+  padding: 0.5em;
+	text-align: left;
+  line-height: 1.1em;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
+  box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
+}
