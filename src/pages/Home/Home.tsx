@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 import { Header, MenuBar } from '../../common/components';
-import ProductCard from '../../common/components/PruductCard/ProductCard';
+import ProductCard from '../../common/components/ProductCard/ProductCard';
 
 
 const Home: React.FC = () => {
