@@ -1,10 +1,10 @@
 import React from 'react';
-import { IonContent, IonPage, IonText, IonItemGroup, IonItem, IonCard, IonInput, IonLabel, IonAvatar } from '@ionic/react';
+import { IonContent, IonPage, IonText, IonItemGroup, IonCard, IonInput, IonLabel, IonAvatar } from '@ionic/react';
 import { Header, MenuBar } from '../../common/components';
 import {IonIcon} from '@ionic/react';
 import {addSharp} from 'ionicons/icons';
 import RadiusSlider from '../../common/components/RadiusSlider/RadiusSlider'
-import './Profile.css'
+
 
 const Profile: React.FC = () => {
   return (
