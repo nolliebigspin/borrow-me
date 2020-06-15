@@ -11,7 +11,7 @@ interface ContainsProps {
 const ActionButton: React.FC<ContainsProps> = ({ text }) => {
     return (
         <IonContent className = "container">
-            <IonButton className = "button">{text}</IonButton>
+            <IonButton className = "button" color="secondary">{text}</IonButton>
         </IonContent>
     );
 };

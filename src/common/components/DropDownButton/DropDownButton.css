@@ -1,0 +1,11 @@
+.button {
+    width: 140px;
+    height: 43px;
+}
+
+.icon {
+    color: white;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 10px;
+}
