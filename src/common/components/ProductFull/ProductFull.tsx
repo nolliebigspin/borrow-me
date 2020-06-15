@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductFull.css'
-import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText } from '@ionic/react';
+import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText, IonButton } from '@ionic/react';
 
 interface props {
   title: string;
@@ -11,7 +11,7 @@ interface props {
   available: boolean
 }
 
-const ProductFull: React.FC<props> = ({ title, image, description, category, distance }) => {
+const ProductFull: React.FC<props> = ({ title, image, description, category, distance, available }) => {
 
   return (
     <IonCard color="light">
@@ -23,22 +23,25 @@ const ProductFull: React.FC<props> = ({ title, image, description, category, dis
               <IonCardTitle className="title">{title}</IonCardTitle>
               <IonCardContent>
                 <IonRow>
-                  <IonCol>
-                    {category && 
-                      <IonChip color="secondary">
-                        <IonLabel>{category}</IonLabel>
-                      </IonChip>
-                    }
-                  </IonCol>
-                  <IonCol>
-                    {distance &&
-                      <IonChip color="secondary">
-                        <IonLabel>{distance} km</IonLabel>
-                      </IonChip>
-                    }
-                  </IonCol>
+                  {category && 
+                    <IonChip color="secondary">
+                      <IonLabel>{category}</IonLabel>
+                    </IonChip>
+                  }
+                  {distance &&
+                    <IonChip color="secondary">
+                      <IonLabel>{distance} km</IonLabel>
+                    </IonChip>
+                  }
                 </IonRow>
-                {description && <IonText>{description}</IonText>}
+                <IonText className="description">{description}</IonText>
+                {
+                  available ? (
+                    <IonButton className="Button" color="secondary">Leihen</IonButton>
+                  ) : (
+                    <IonButton className="Button" color="medium">Leihen</IonButton>
+                  )
+                }
               </IonCardContent>
             </div>
           </IonCol>
