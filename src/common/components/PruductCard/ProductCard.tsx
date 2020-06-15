@@ -4,37 +4,42 @@ import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol,
 
 interface props {
   title: string;
+  image: string;
   description?: string;
   category?: string;
   distance?: string;
 }
 
-const ProductCard: React.FC<props> = ({ title, description, category, distance }) => {
+const ProductCard: React.FC<props> = ({ title, image, description, category, distance }) => {
 
   return (
     <IonCard color="light">
       <IonGrid>
         <IonRow>
           <IonCol>
-            <IonImg className="image" src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80" />
+            <IonImg className="image" src={image} />
           </IonCol>
           <IonCol>
             <div>
-              <IonCardTitle >{title}</IonCardTitle>
+              <IonCardTitle>{title}</IonCardTitle>
               <IonCardContent>
                 <IonRow>
                   <IonCol>
-                    <IonChip color="secondary">
-                      <IonLabel>{category}</IonLabel>
-                    </IonChip>
+                    {category && 
+                      <IonChip color="secondary">
+                        <IonLabel>{category}</IonLabel>
+                      </IonChip>
+                    }
                   </IonCol>
                   <IonCol>
-                    <IonChip color="secondary">
-                      <IonLabel>{distance} km</IonLabel>
-                    </IonChip>
+                    {distance &&
+                      <IonChip color="secondary">
+                        <IonLabel>{distance} km</IonLabel>
+                      </IonChip>
+                    }
                   </IonCol>
                 </IonRow>
-              <IonText>{description}</IonText>
+                {description && <IonText>{description}</IonText>}
               </IonCardContent>
             </div>
           </IonCol>

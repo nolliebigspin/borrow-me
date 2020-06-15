@@ -11,6 +11,7 @@ const Home: React.FC = () => {
       <IonContent color="light">
         <ProductCard 
           title="Bohrmaschine"
+          image="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80"
           description="Eine tolle und gelbe Bohrmaschine"
           distance="3"
           category="Werkzeug"
