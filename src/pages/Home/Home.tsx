@@ -2,6 +2,7 @@ import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 import { Header, MenuBar } from '../../common/components';
 
+
 const Home: React.FC = () => {
   return (
     <IonPage>

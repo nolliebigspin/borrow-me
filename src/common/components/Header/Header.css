@@ -1,0 +1,14 @@
+@font-face {
+    font-family: caveatBrush;
+    src: url('./CaveatBrush-Regular.ttf');
+}
+
+.header {
+    box-shadow: 0px 2px 15px #9F9F9F;
+    
+}
+
+.text {
+    font-family: caveatBrush;
+    font-size: 40px;
+}
