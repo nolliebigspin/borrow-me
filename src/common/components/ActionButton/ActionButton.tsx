@@ -59,7 +59,7 @@ const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButt
     <IonButton 
       className = { styleClass } 
       color={ color }  
-    >{ displayedText } { content } { displayedTextTheSecond }</IonButton>
+    >{ displayedText } { content }</IonButton>
   );
 };
 

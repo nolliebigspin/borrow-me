@@ -1,4 +1,7 @@
-.base {
-  border-width: 1px;
-  border-color: red;
+.input {
+  text-align: left;
+}
+.icon {
+  font-size: 100px;
+  cursor: pointer;
 }

@@ -4,6 +4,7 @@ import { Header, MenuBar } from '../../common/components';
 import { chevronDownSharp } from 'ionicons/icons';
 import ActionButton from '../../common/components/ActionButton/ActionButton';
 import './Award.css';
+import NewBorrowContainer from '../../common/components/NewBorrowContainer/NewBorrowContainer';
 
 
 const Award: React.FC = () => {
