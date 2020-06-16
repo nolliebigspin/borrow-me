@@ -1,14 +1,9 @@
 import React, {useState} from 'react';
 import './ProductCard.css'
-<<<<<<< HEAD
-import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText, IonModal, IonContent } from '@ionic/react';
-import { Header, MenuBar } from '../';
-=======
 import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText, IonModal, IonContent, IonIcon} from '@ionic/react';
 import { Header} from '../';
 import ActionButton from '../ActionButton/ActionButton';
 import { arrowBack } from 'ionicons/icons';
->>>>>>> searchPageProductPopUp
 
 interface props {
   title: string;
