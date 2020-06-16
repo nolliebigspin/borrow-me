@@ -1,8 +1,6 @@
 import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
 import { Header, MenuBar } from '../../common/components';
-
-
 import ProductCard from '../../common/components/ProductCard/ProductCard';
 import ActionButton from '../../common/components/ActionButton/ActionButton';
 import {chevronDownSharp} from "ionicons/icons";
@@ -20,12 +18,15 @@ const Home: React.FC = () => {
           distance="3"
           category="Werkzeug"
         />
-        <ActionButton
-          dropDownButton={true}
-          dropDownSliderButton={false}
+      </IonContent>
+      <IonContent>
+      <ActionButton
+          dropDownButton={false}
+          dropDownSliderButton={true}
           borrowButton={false}
           FAQButton={false}
           icon={chevronDownSharp}
+          text="LEIHEN"
           color="secondary"    
         />
       </IonContent>

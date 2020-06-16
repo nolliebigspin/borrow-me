@@ -20,7 +20,7 @@
 .dropDownButton {
     width: 140px;
     height: 43px;
-
+    box-shadow: 0px 4px 10px #9F9F9F;
 }
 
 .iconDropDown {
@@ -31,7 +31,12 @@
 }
 
 .dropDownSliderButton {
-
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 25px;
+    height: 50px; 
+    box-shadow: 0px 4px 10px #9F9F9F;
 }
 
 .iconDropDownSlider {
@@ -39,5 +44,19 @@
 }
 
 .FAQButton {
+    text-align: right;
+    font-size: 25px;
+    width: 90%;
+    box-shadow: 0px 1px 4px #9F9F9F;
+    height: 55px;
     
 }
+
+.FAQIcon {
+}
+
+.FAQText {
+    
+}
+
+

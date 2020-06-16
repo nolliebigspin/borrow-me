@@ -21,6 +21,7 @@ const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButt
 
   var styleClass = "default";
   var content;
+  var displayedText;
 
 
   if (borrowButton) {
@@ -34,20 +35,19 @@ const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButt
   } else if (dropDownSliderButton) {
     styleClass = "dropDownSliderButton";
     content = <IonIcon icon={ icon}  className="iconDropDownSlider" ></IonIcon>
+    displayedText = text;
 
   } else if (FAQButton) {
     styleClass = "FAQButton";
-    content = <IonIcon icon={ icon } className="iconFAQ" color="secondary" ></IonIcon>
+    content = text ;
   } 
-
-
 
   return (
     <div className = "container">
       <IonButton 
         className = { styleClass } 
         color={ color }  
-        >{ content }</IonButton>
+      >{ displayedText }{ content }</IonButton>
     </div>
   );
 };
