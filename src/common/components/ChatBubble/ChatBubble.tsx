@@ -32,9 +32,9 @@ const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
                 <p>{text}</p>
                 {
                   isFilled ? (
-                    <IonIcon icon={thumbsUp}  onClick={switchFilled} />
+                    <IonIcon className="thumb" icon={thumbsUp}  onClick={switchFilled} />
                   ) : (
-                    <IonIcon icon={thumbsUpOutline}  onClick={switchFilled} />
+                    <IonIcon className="thumb" icon={thumbsUpOutline}  onClick={switchFilled} />
                   )
                 }
               </div>
