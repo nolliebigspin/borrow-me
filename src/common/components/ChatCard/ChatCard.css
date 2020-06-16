@@ -1,7 +1,9 @@
 .base {
   cursor: pointer;
 }
-
+.avatar {
+  margin-left: 1vw;
+}
 .name {
   margin-left: 5vw;
 }

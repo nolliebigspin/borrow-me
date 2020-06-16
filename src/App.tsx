@@ -32,7 +32,6 @@ import Messages from './pages/Messages/Messages';
 import Login from './pages/Login/Login';
 import { IonReactRouter } from '@ionic/react-router';
 
-
 const App: React.FC = () => (
   <IonApp>
     <Header title={"BorrowMe"} />
