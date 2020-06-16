@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { IonContent, IonPage, IonText, IonItem, IonCard, IonInput, IonLabel, IonModal, IonButton, IonTitle} from '@ionic/react';
+import React from 'react';
+import { IonContent, IonPage } from '@ionic/react';
 import { Header, MenuBar} from '../../common/components';
 import ProductCard from '../../common/components/ProductCard/ProductCard';
 import './Search.css'
