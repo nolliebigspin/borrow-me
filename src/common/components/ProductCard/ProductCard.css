@@ -11,3 +11,25 @@
   margin-bottom: 2vh;
 }
 
+.faq-button{
+  text-align: center;
+  margin-top: 30vh;
+}
+
+.back-Icon{
+  position: absolute;
+}
+
+.description{
+  margin-left: 1vh;
+}
+
+.backIcon {
+  position: absolute;
+  font-size: 30px;
+  margin-top: 2vh;
+  margin-left: 3vw;
+  cursor: pointer;
+  z-index: 11;
+  color: white;
+}
