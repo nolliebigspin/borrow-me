@@ -1,3 +1,16 @@
 .pageTitle {
-  margin: 5vw;
+  text-align: center;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.feed{
+  margin: 0 5vw 0 5vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.send-message-field{
+  display: flex;
+  height: 50px;
 }
