@@ -12,10 +12,10 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <Header title={"BorrowMe"} />
-      <IonContent color="light" className="content">
-        <div className="searchBarContainer">
+      <div className="searchBarContainer">
           <SearchBar/>
         </div>
+      <IonContent color="light" className="content">
         <div>
           <IonCard className="geliehenesCard">
             <h1 className="geliehenesHeadline">Geliehenes</h1>
@@ -29,34 +29,32 @@ const Home: React.FC = () => {
               FAQButton={false}
               color="secondary"
               icon={chevronDownSharp}/>
-        <div>
-          <IonCard className="chatCard">
-            <h1 className="chatHeadline">Das ist gerade los in deiner Nachbarschaft</h1>
-            <div className="chatBubbleConatainer">
-              <ChatBubble
-                text="Tom: Ich wohne in der Seitenstraße 12,
-                es gibt auch was zu Essen :)"
-                image="https://images.unsplash.com/photo-1466112928291-0903b80a9466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
-                left={true}
-              />
-              <ChatBubble
-                text="Rita: Sehr gut! Dann bis gleich :)"
-                image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-                left={true}
-              />
-            </div>
+        <IonCard className="chatCard">
+          <h1 className="chatHeadline">Das ist gerade los in deiner Nachbarschaft</h1>
+            <ChatBubble
+              text="Tom: Ich wohne in der Seitenstraße 12,
+              es gibt auch was zu Essen :)"
+              image="https://images.unsplash.com/photo-1466112928291-0903b80a9466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+              left={true}
+            />
+            <ChatBubble
+              text="Rita: Sehr gut! Dann bis gleich :)"
+              image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+              left={true}
+            />
           </IonCard>
-        </div>
-        <ActionButton
-          dropDownButton={false}
-          dropDownSliderButton={true}
-          borrowButton={false}
-          FAQButton={false}
-          color="secondary"
-          text="VERLEIHEN"
-          icon={chevronUpSharp}
-        />
-        </IonContent>      
+        </IonContent> 
+        <div className="dropDownSliderButton">
+          <ActionButton
+            dropDownButton={false}
+            dropDownSliderButton={true}
+            borrowButton={false}
+            FAQButton={false}
+            color="secondary"
+            text="VERLEIHEN"
+            icon={chevronUpSharp}
+          />
+        </div>     
         <MenuBar />
     </IonPage>
   );

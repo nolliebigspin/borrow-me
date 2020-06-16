@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './ProductCard.css'
 import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText, IonModal, IonContent } from '@ionic/react';
 import { Header, MenuBar } from '../';
-import ActionButton from '../ActionButton/ActionButton';
 
 interface props {
   title: string;
