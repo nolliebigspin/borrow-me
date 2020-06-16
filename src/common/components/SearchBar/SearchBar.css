@@ -20,6 +20,7 @@
     text-align: left;
 }
 
+
 .inputElement::placeholder {
     color: #9F9F9F;
 }

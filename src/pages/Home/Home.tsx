@@ -14,7 +14,8 @@ const Home: React.FC = () => {
       <Header title={"BorrowMe"} />
       <IonContent color="light" className="content">
         <div className="searchBarContainer">
-          <SearchBar/>
+          <SearchBar
+          changePlaceholder={false}/>
         </div>
         <div>
           <IonCard className="geliehenesCard">
