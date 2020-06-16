@@ -1,0 +1,35 @@
+.adresss-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.adress-card{
+  flex: 1;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  text-align: center;
+}
+
+.adress-card-new{
+  flex: 1;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  text-align: center;
+  font-size: 20px;
+}
+
+.profile-text{
+  text-align: center;
+}
+
+.center-content{
+  display: flex;
+  justify-content: center;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
+  box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
+}
+
