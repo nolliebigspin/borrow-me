@@ -11,6 +11,6 @@
 }
 
 .send-message-field{
-  display: flex;
-  height: 50px;
+  position: relative;
+  margin-top: 6vh;
 }
