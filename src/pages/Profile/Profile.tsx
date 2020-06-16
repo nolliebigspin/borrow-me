@@ -4,7 +4,7 @@ import { Header, MenuBar } from '../../common/components';
 import {IonIcon} from '@ionic/react';
 import {addSharp} from 'ionicons/icons';
 import RadiusSlider from '../../common/components/RadiusSlider/RadiusSlider'
-import './Profile.css'
+
 
 const Profile: React.FC = () => {
   const [showModal, setShowModal] = useState(false);

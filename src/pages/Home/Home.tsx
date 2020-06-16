@@ -3,6 +3,8 @@ import { IonContent, IonPage } from '@ionic/react';
 import { Header, MenuBar } from '../../common/components';
 import ProductCard from '../../common/components/ProductCard/ProductCard';
 import ProductFull from '../../common/components/ProductFull/ProductFull';
+import ActionButton from '../../common/components/ActionButton/ActionButton';
+import {chevronDownSharp} from "ionicons/icons";
 
 
 const Home: React.FC = () => {
@@ -24,6 +26,17 @@ const Home: React.FC = () => {
           distance="3"
           category="Werkzeug"
           available={false}
+        />
+      </IonContent>
+      <IonContent>
+      <ActionButton
+          dropDownButton={false}
+          dropDownSliderButton={true}
+          borrowButton={false}
+          FAQButton={false}
+          icon={chevronDownSharp}
+          text="LEIHEN"
+          color="secondary"    
         />
       </IonContent>
       <MenuBar />
