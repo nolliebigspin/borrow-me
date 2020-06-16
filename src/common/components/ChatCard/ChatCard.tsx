@@ -1,17 +1,23 @@
 import './ChatCard.css'
+import React from 'react';
+import { IonItem, IonLabel, IonAvatar } from '@ionic/react';
 
 
 interface ContainerProps {
   contact: string;
-  lastMessage?: string;
   image?: string;
-  online?: boolean;
 }
 
-const ChatCard: React.FC<ContainerProps> = ({ contact, lastMessage, image }) => {
+const ChatCard: React.FC<ContainerProps> = ({ contact, image }) => {
 
   return (
     <div>
+      <IonItem color="light">
+        <IonAvatar className="shadow">
+          <img src={image} alt="" />
+        </IonAvatar>
+        <IonLabel className="name">{contact}</IonLabel>
+      </IonItem>
     </div>
   );
 };

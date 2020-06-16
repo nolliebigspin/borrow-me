@@ -2,6 +2,7 @@ import React from 'react';
 import { IonContent, IonPage, IonText } from '@ionic/react';
 import { Header, MenuBar } from '../../common/components';
 import './Feed.css'
+import ChatCard from '../../common/components/ChatCard/ChatCard';
 
 const Feed: React.FC = () => {
   return (
@@ -9,7 +10,6 @@ const Feed: React.FC = () => {
       <Header title={"BorrowMe"} />
       <IonContent color="light">
         <IonText className="pageTitle" color="primary" >Das ist gerade los in deiner Nachbarschaft</IonText>
- 
         </IonContent>
       <MenuBar />
     </IonPage>
