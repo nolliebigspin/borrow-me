@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './ChatBubble.css'
-import { IonAvatar, IonGrid, IonRow, IonIcon } from '@ionic/react';
+import { IonAvatar, IonGrid, IonRow, IonIcon, IonCard } from '@ionic/react';
 import { thumbsUp, thumbsUpOutline } from 'ionicons/icons';
 
 
@@ -27,7 +27,7 @@ const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
             <IonAvatar className="shadow">
               <img src={image} alt="" />
             </IonAvatar>
-            <div className="talk-bubble round shadow">
+            <IonCard color="light" className="talk-bubble round">
               <div className="talktext">
                 <p>{text}</p>
                 {
@@ -38,7 +38,7 @@ const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
                   )
                 }
               </div>
-            </div>
+            </IonCard>
           </IonRow>
         </IonGrid>
       </div>
@@ -46,11 +46,11 @@ const ChatBubble: React.FC<ContainerProps> = ({ text, image, left }) => {
         <div className="baseRight">
         <IonGrid>
           <IonRow>
-            <div className="talk-bubble round shadow">
+            <IonCard color="light" className="talk-bubble round">
               <div className="talktext">
                 <p>{text}</p>
               </div>
-            </div>
+            </IonCard>
             <IonAvatar className="shadow">
               <img src={image} alt="" />
             </IonAvatar>

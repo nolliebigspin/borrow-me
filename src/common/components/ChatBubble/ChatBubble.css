@@ -23,9 +23,3 @@
 	text-align: left;
   line-height: 1.1em;
 }
-
-.shadow {
-  -webkit-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
-  -moz-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
-  box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
-}
