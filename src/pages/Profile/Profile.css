@@ -1,4 +1,4 @@
-.adresss-flex-container {
+.adress-flex-container {
   display: flex;
   flex-direction: row;
 }
@@ -27,9 +27,45 @@
   justify-content: center;
 }
 
-.shadow {
+.shadow{
   -webkit-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
   -moz-box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
   box-shadow: 0px 9px 20px -5px rgba(0,0,0,0.28);
+}
+
+.adress-info-container{
+  text-align: center;
+  margin: 5vw;
+  margin-top: 20vh;
+}
+
+.adress-input-container{
+  margin: 5vw;
+  margin-top: 20vh;
+}
+
+.adress-content{
+  padding: 1vw;
+}
+
+.back-button{
+  padding: 1vw;
+  text-align: center;
+  margin-bottom: 5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.accept-button{
+  padding: 2vw;
+  text-align: center;
+  margin-bottom: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+}
+
+.headline{
+  text-align: center;
 }
 

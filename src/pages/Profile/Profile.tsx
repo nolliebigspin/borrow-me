@@ -23,24 +23,71 @@ const Profile: React.FC = () => {
         <IonModal isOpen={showModal}>
 
           {location === "home" &&
-            <div>
-              <IonLabel>Wohnmung</IonLabel>
-            <IonCard>
-              <IonLabel>Beispeilstraße</IonLabel>
-            </IonCard>
+            <div className="adress-info-container">
+              <IonLabel color="primary">Wohnung</IonLabel>
+              <IonCard color="light" className="adress-content">
+                <IonLabel>Beispielstraße</IonLabel>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonLabel>12</IonLabel>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonLabel>12345</IonLabel>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonLabel>Beispielstadt</IonLabel>
+              </IonCard>
             </div>
           }
 
           {location === "garden" && 
-            <p>Test, popup content</p>
+            <div className="adress-info-container">
+              <IonLabel color="primary">Garten</IonLabel>
+              <IonCard color="light" className="adress-content">
+                <IonLabel>Beispielstraße</IonLabel>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonLabel>90</IonLabel>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonLabel>12345</IonLabel>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonLabel>Beispielstadt</IonLabel>
+              </IonCard>
+            </div>
           }
 
           {location === "new" &&
-            <p>Test2, popup content</p>
+            <div className="adress-input-container">
+              <div className="headline">
+                <IonLabel color="primary">Neuse Profil</IonLabel>
+              </div>
+            
+              <IonCard color="light" className="adress-content">
+                <IonInput className="input" placeholder="Profil Name"></IonInput>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonInput className="input" placeholder="Straße"></IonInput>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonInput className="input" placeholder="Hausnummer"></IonInput>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonInput className="input" placeholder="Postleitzahl"></IonInput>
+              </IonCard>
+              <IonCard color="light" className="adress-content">
+                <IonInput className="input" placeholder="Ort"></IonInput>
+              </IonCard>
+              <IonCard color="secondary" className="accept-button" onClick={() => setShowModal (false)}>
+                BESTÄTIGEN
+              </IonCard>
+            </div>
           }
           
-          <IonCard color="secondary" onClick={() => setShowModal (false)}>Close</IonCard>
+          <IonCard color="secondary" className="back-button" onClick={() => setShowModal (false)}>Zurück</IonCard>
         </IonModal>
+
         <IonItemGroup className="profile-text">
           <IonText color="primary" ><h2>Hallo Vorname Nachname!</h2></IonText>
           <IonText color="primary" ><h2>Deine Daten</h2></IonText>
@@ -72,17 +119,17 @@ const Profile: React.FC = () => {
         <IonCard color="light">
           <IonInput className="Input" placeholder="Über mich"></IonInput>
         </IonCard>
-        <div className="adresss-flex-container">
-          <IonCard className="adress-card" onClick={() => handleClick("home")}>
+        <div className="adress-flex-container">
+          <IonCard color="light" className="adress-card" onClick={() => handleClick("home")}>
             <IonLabel color="dark" >Wohnung</IonLabel>
           </IonCard>
-          <IonCard className="adress-card" onClick={() => handleClick("garden")}>
+          <IonCard color="light" className="adress-card" onClick={() => handleClick("garden")}>
             <IonLabel color="dark" >Garten</IonLabel>
           </IonCard>
-          <IonCard className="adress-card-new" onClick={() => handleClick("new")}>
+          <IonCard color="light" className="adress-card-new" onClick={() => handleClick("new")}>
               <IonIcon icon={addSharp} />
           </IonCard>
-          <IonCard className="adress-card-new" onClick={() => handleClick("new")}>
+          <IonCard color="light" className="adress-card-new" onClick={() => handleClick("new")}>
               <IonIcon icon={addSharp} />
           </IonCard>
         </div>
