@@ -4,6 +4,7 @@
     margin: 0 5vw 0 5vw;
     padding: 0 20px 0 20px;
     box-shadow: 0px 2px 4px #9F9F9F;
+    position: relative;
 }
 
 .searchElement {
