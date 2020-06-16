@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonPage, IonText, IonItemGroup, IonItem, IonCard, IonInput, IonLabel, IonAvatar , IonModal, IonButton, IonTitle} from '@ionic/react';
+import { IonContent, IonPage, IonText, IonItemGroup, IonCard, IonInput, IonLabel, IonAvatar , IonModal} from '@ionic/react';
 import { Header, MenuBar } from '../../common/components';
 import {IonIcon} from '@ionic/react';
 import {addSharp} from 'ionicons/icons';

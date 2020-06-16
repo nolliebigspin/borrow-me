@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { IonContent, IonPage, IonModal, IonButton } from '@ionic/react';
+import React from 'react';
+import { IonContent, IonPage} from '@ionic/react';
 import { Header, MenuBar } from '../../common/components';
 import ChatCard from '../../common/components/ChatCard/ChatCard';
 

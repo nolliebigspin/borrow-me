@@ -34,21 +34,21 @@ const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButt
 
   } else if (dropDownSliderButton) {
     styleClass = "dropDownSliderButton";
-    content = <IonIcon icon={ icon}  className="iconDropDownSlider" ></IonIcon>
-    displayedText = text;
-
+    content = 
+              <div>
+                <IonIcon icon={ icon}  className="iconDropDownSlider" >  </IonIcon>
+                <p className="textDropDownSlider">{text}</p>
+              </div>
   } else if (FAQButton) {
     styleClass = "FAQButton";
     content = text ;
   } 
 
   return (
-    <div className = "container">
-      <IonButton 
-        className = { styleClass } 
-        color={ color }  
-      >{ displayedText }{ content }</IonButton>
-    </div>
+    <IonButton 
+      className = { styleClass } 
+      color={ color }  
+    >{ displayedText } { content }</IonButton>
   );
 };
 
