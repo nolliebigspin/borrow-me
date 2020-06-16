@@ -1,0 +1,42 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.searchBarContainer{
+    margin-top: 10%;
+}
+
+.geliehenesCard {
+    text-align: center;
+    color: black;
+    padding: 0;
+    margin: 0 5vw 0 5vw;
+    z-index: 1;
+}
+
+.geliehenesHeadline {
+    margin-top: 10px;
+}
+
+.geliehenesText {
+    font-size: 15px;
+}
+
+
+.chatCard {
+    text-align: center;
+    color: black;
+    padding: 0;
+    margin: 0 5vw 5vw 5vw;
+}
+
+.chatHeadline {
+    font-size: 24px;
+}
+
+.chatBubbleContainer {
+    margin: auto;
+}
