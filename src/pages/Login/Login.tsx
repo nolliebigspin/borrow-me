@@ -73,7 +73,7 @@ const Login: React.FC = () => {
               <IonButton className="Button" color="secondary" onClick={checkLogin}>Einloggen</IonButton>
             </IonCol>
             <IonCol>
-              <IonButton className="Button" color="secondary" routerLink="/home">Registrieren</IonButton>
+              <IonButton className="Button" color="secondary" routerLink="/profile">Registrieren</IonButton>
             </IonCol>
           </IonRow>
         </IonGrid>

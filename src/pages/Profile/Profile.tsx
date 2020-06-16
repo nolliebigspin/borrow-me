@@ -37,7 +37,7 @@ const Profile: React.FC = () => {
           <IonInput className="Input" placeholder="Email"></IonInput>
         </IonCard>
         <IonCard color="light">
-          <IonInput className="Input" placeholder="Passwort"></IonInput>
+          <IonInput className="Input" placeholder="Passwort" type="password"></IonInput>
         </IonCard>
         <IonCard color="light">
           <IonInput className="Input" placeholder="Über mich"></IonInput>
