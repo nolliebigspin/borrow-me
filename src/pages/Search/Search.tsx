@@ -11,7 +11,9 @@ const Search: React.FC = () => {
     <IonPage>
       <Header title={"BorrowMe"} />
       <div className="searchbar">
-            <SearchBar/>
+            <SearchBar
+            placeholder="Bohrmaschine"
+            changePlaceholder={true}/>
       </div> 
       <IonContent color="light" className="content-container">
       

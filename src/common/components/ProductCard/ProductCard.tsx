@@ -1,7 +1,14 @@
 import React, {useState} from 'react';
 import './ProductCard.css'
+<<<<<<< HEAD
 import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText, IonModal, IonContent } from '@ionic/react';
 import { Header, MenuBar } from '../';
+=======
+import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText, IonModal, IonContent, IonIcon} from '@ionic/react';
+import { Header} from '../';
+import ActionButton from '../ActionButton/ActionButton';
+import { arrowBack } from 'ionicons/icons';
+>>>>>>> searchPageProductPopUp
 
 interface props {
   title: string;
@@ -54,6 +61,7 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
       </div>
       <IonModal isOpen={showModal}>
         <Header title={"BorrowMe"}/>
+        <IonIcon className="backIcon" icon={arrowBack}  onClick={() => setShowModal(false)} />
         <IonContent>
           <div>
             <div className="card-title">
@@ -83,15 +91,27 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
                         }
                       </IonCol>
                     </IonRow>
-                    {description && <IonText>{description}</IonText>}
                   </IonCardContent>
                 </div>
               </IonCol>
             </IonRow>
+            <div className="description">
+             {description && <IonText>{description}</IonText>}
+            </div>
           </IonGrid>
           </div>
+          <div className="faq-button">
+            <ActionButton
+            borrowButton={false}
+            dropDownButton={false}
+            dropDownSliderButton={false}
+            FAQButton={true}
+            text={"Fragen?"}
+            color="white"
+          /> 
+          </div>
+          
         </IonContent>
-        <MenuBar/>
       </IonModal>
     </div>
   );

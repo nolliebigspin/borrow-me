@@ -12,8 +12,10 @@ const Home: React.FC = () => {
   return (
     <IonPage>
       <Header title={"BorrowMe"} />
-      <div className="searchBarContainer">
-          <SearchBar/>
+      <IonContent color="light" className="content">
+        <div className="searchBarContainer">
+          <SearchBar
+          changePlaceholder={false}/>
         </div>
       <IonContent color="light" className="content">
         <div>
