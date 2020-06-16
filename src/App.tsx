@@ -1,5 +1,6 @@
 import React from 'react';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
+import './App.scss'
 
 import { Header } from './common/components';
 
@@ -34,7 +35,7 @@ import Search from './pages/Search/Search'
 import { IonReactRouter } from '@ionic/react-router';
 
 const App: React.FC = () => (
-  <IonApp>
+  <IonApp className="app">
     <Header title={"BorrowMe"} />
     <IonReactRouter>
       <IonRouterOutlet>
