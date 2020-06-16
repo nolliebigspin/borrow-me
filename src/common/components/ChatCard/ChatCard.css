@@ -7,3 +7,16 @@
 .name {
   margin-left: 5vw;
 }
+.backIcon {
+  position: absolute;
+  font-size: 30px;
+  margin-top: 2vh;
+  margin-left: 3vw;
+  cursor: pointer;
+  z-index: 11;
+  color: white;
+}
+.send-message-field{
+  margin-bottom: 2vh;
+}
+
