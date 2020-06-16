@@ -30,6 +30,7 @@ import Home from './pages/Home/Home';
 import Feed from './pages/Feed/Feed';
 import Messages from './pages/Messages/Messages';
 import Login from './pages/Login/Login';
+import Search from './pages/Search/Search'
 import { IonReactRouter } from '@ionic/react-router';
 
 const App: React.FC = () => (
@@ -37,6 +38,7 @@ const App: React.FC = () => (
     <Header title={"BorrowMe"} />
     <IonReactRouter>
       <IonRouterOutlet>
+        <Route path="/search" component={Search} />
         <Route path="/profile" component={Profile} />
         <Route path="/home" component={Home} />
         <Route path="/feed" component={Feed} />

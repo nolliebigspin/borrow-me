@@ -36,11 +36,11 @@ const Feed: React.FC = () => {
               image = "https://images.unsplash.com/photo-1466112928291-0903b80a9466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
             />
           </div>
-          <div className="send-message-field">
-            <SendMessageField />
-          </div>
         </div>
       </IonContent>
+      <div className="send-message-field">
+        <SendMessageField />
+      </div>
       <MenuBar />
     </IonPage>
   );
