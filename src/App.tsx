@@ -31,7 +31,8 @@ import Home from './pages/Home/Home';
 import Feed from './pages/Feed/Feed';
 import Messages from './pages/Messages/Messages';
 import Login from './pages/Login/Login';
-import Search from './pages/Search/Search'
+import Search from './pages/Search/Search';
+import FAQ from './pages/FAQ/FAQ';
 import { IonReactRouter } from '@ionic/react-router';
 
 const App: React.FC = () => (
@@ -40,6 +41,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/search" component={Search} />
+        <Route path="/faq" component={FAQ} />
         <Route path="/profile" component={Profile} />
         <Route path="/home" component={Home} />
         <Route path="/feed" component={Feed} />

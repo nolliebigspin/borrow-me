@@ -1,0 +1,22 @@
+.headline{
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+
+.backIcon {
+  font-size: 30px;
+  margin-top: 3.5vh;
+  margin-left: 3vw;
+  cursor: pointer;
+  z-index: 11;
+  color: gray;
+}
+
+.send-message-field{
+  margin-bottom: 2vh;
+}
+
+.faq-content{
+  margin: 4vh;
+
+}

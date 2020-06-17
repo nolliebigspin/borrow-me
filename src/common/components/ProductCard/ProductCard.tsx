@@ -4,6 +4,7 @@ import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol,
 import { Header} from '../';
 import ActionButton from '../ActionButton/ActionButton';
 import { arrowBack } from 'ionicons/icons';
+import { useHistory } from 'react-router';
 
 interface props {
   title: string;
@@ -14,8 +15,13 @@ interface props {
 }
 
 const ProductCard: React.FC<props> = ({ title, image, description, category, distance }) => {
-  
   const [showModal, setShowModal] = useState(false);
+  const history = useHistory();
+
+  function openFAQ() {
+    setShowModal(false)
+    history.push('/faq')
+  }
 
   return (
     <div>
@@ -56,7 +62,7 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
       </div>
       <IonModal isOpen={showModal}>
         <Header title={"BorrowMe"}/>
-        <IonIcon className="backIcon" icon={arrowBack}  onClick={() => setShowModal(false)} />
+        <IonIcon className="backIcon" icon={arrowBack} onClick={() => setShowModal(false)} />
         <IonContent>
           <div>
             <div className="card-title">
@@ -95,7 +101,17 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
             </div>
           </IonGrid>
           </div>
-          <div className="faq-button">
+          <div className="borrow-button">
+            <ActionButton
+            borrowButton={false}
+            dropDownButton={false}
+            dropDownSliderButton={false}
+            FAQButton={true}
+            text={"LEIHEN"}
+            color="secondary"
+          /> 
+          </div>
+          <div className="faq-button" onClick={() => openFAQ()}>
             <ActionButton
             borrowButton={false}
             dropDownButton={false}

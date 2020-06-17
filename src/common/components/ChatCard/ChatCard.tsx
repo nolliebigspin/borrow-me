@@ -28,7 +28,7 @@ const ChatCard: React.FC<ContainerProps> = ({ contact, image }) => {
         <IonContent>
           <IonIcon className="backIcon" icon={arrowBack}  onClick={() => setShowModal(false)} />
           <Header
-            title="borrowMe"
+            title="BorrowMe"
           />
           <ChatBubble
             left={true}
