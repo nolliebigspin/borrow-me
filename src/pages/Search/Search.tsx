@@ -1,6 +1,6 @@
 import React from 'react';
 import { IonContent, IonPage } from '@ionic/react';
-import { Header, MenuBar} from '../../common/components';
+import { Header, MenuBar } from '../../common/components';
 import ProductCard from '../../common/components/ProductCard/ProductCard';
 import './Search.css'
 import SearchBar from '../../common/components/SearchBar/SearchBar';

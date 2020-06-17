@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonContent, IonPage, IonCard, IonTitle, IonIcon } from '@ionic/react';
+import { IonContent, IonPage, IonTitle, IonIcon } from '@ionic/react';
 import { Header, MenuBar} from '../../common/components';
 import './FAQ.css';
 import { arrowBack } from 'ionicons/icons';

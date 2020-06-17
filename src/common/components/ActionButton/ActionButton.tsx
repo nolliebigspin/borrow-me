@@ -31,7 +31,12 @@ const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButt
   var displayedText;
 
   const open = (): void => {
-    history.push("/" + openPage)
+    if (openPage) {
+      history.push("/" + openPage)
+    }
+    else  {
+      return
+    }
   }
 
 
