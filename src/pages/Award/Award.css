@@ -26,3 +26,9 @@
 .verliehenesText {
     font-size: 15px;
 }
+
+.headline {
+    font-size: 23px;
+    color: #FFA400;
+    margin: 0;
+}

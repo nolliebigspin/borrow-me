@@ -37,6 +37,18 @@ const Award: React.FC = () => {
               FAQButton={false}
               color="secondary"
               icon={chevronDownSharp}/>
+        <p className="headline" >Etwas neues verleihen</p>
+        <NewBorrowContainer/>
+        <div className="leihenContainer">
+          <ActionButton
+            dropDownButton={false}
+            dropDownSliderButton={false}
+            borrowButton={true}
+            FAQButton={false}
+            color="secondary"
+            text="VERLEIHEN"
+          />
+        </div>
         </IonContent> 
       <MenuBar />
     </IonPage>
