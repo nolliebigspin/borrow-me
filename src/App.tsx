@@ -32,7 +32,7 @@ import Feed from './pages/Feed/Feed';
 import Messages from './pages/Messages/Messages';
 import Login from './pages/Login/Login';
 import Search from './pages/Search/Search';
-import FAQ from './pages/FAQ/FAQ';
+import FAQ from './pages/faq/faq';
 import { IonReactRouter } from '@ionic/react-router';
 import Award from './pages/Award/Award';
 

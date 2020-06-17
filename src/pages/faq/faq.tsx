@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonContent, IonPage, IonTitle, IonIcon } from '@ionic/react';
 import { Header, MenuBar} from '../../common/components';
-import './FAQ.css';
+import './faq.css';
 import { arrowBack } from 'ionicons/icons';
 import { useHistory } from 'react-router';
 import SendMessageField from '../../common/components/SendMessageField/SendMessageField';
