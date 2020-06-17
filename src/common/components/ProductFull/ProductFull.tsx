@@ -35,13 +35,6 @@ const ProductFull: React.FC<props> = ({ title, image, description, category, dis
                   }
                 </IonRow>
                 <IonText className="description">{description}</IonText>
-                {
-                  available ? (
-                    <IonButton className="Button" color="secondary">Leihen</IonButton>
-                  ) : (
-                    <IonButton className="Button" color="medium">Leihen</IonButton>
-                  )
-                }
               </IonCardContent>
             </div>
           </IonCol>

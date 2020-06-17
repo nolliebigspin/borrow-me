@@ -4,14 +4,15 @@ import { IonCard, IonCardTitle, IonCardContent, IonGrid, IonRow, IonImg, IonCol,
 import { Header} from '../';
 import ActionButton from '../ActionButton/ActionButton';
 import { arrowBack } from 'ionicons/icons';
-import { useHistory } from 'react-router';
+import ProductFull from '../ProductFull/ProductFull';
 
 interface props {
   title: string;
   image: string;
-  description?: string;
-  category?: string;
-  distance?: string;
+  description: string;
+  category: string;
+  distance: string;
+  aviailable?: boolean;
 }
 
 const ProductCard: React.FC<props> = ({ title, image, description, category, distance }) => {
@@ -20,6 +21,7 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
   function closeModal() {
     setShowModal(false)
   }
+  
 
   return (
     <div>
@@ -58,47 +60,21 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
           </IonGrid>
         </IonCard>
       </div>
+      
       <IonModal isOpen={showModal}>
         <Header title={"BorrowMe"}/>
         <IonIcon className="backIcon" icon={arrowBack} onClick={() => setShowModal(false)} />
         <IonContent>
-          <div>
-            <div className="card-title">
-              <IonCardTitle className="title-modal" color="primary" >{title}</IonCardTitle>
-            </div>
-          <IonGrid>
-            <IonRow>
-              <IonCol>
-                <IonImg className="image" src={image} />
-              </IonCol>
-              <IonCol>
-                <div>
-                  <IonCardContent>
-                    <IonRow>
-                      <IonCol>
-                        {category && 
-                          <IonChip color="secondary">
-                            <IonLabel>{category}</IonLabel>
-                          </IonChip>
-                        }
-                      </IonCol>
-                      <IonCol>
-                        {distance &&
-                          <IonChip color="secondary">
-                            <IonLabel>{distance} km</IonLabel>
-                          </IonChip>
-                        }
-                      </IonCol>
-                    </IonRow>
-                  </IonCardContent>
-                </div>
-              </IonCol>
-            </IonRow>
-            <div className="description">
-             {description && <IonText>{description}</IonText>}
-            </div>
-          </IonGrid>
-          </div>
+        
+          <ProductFull
+            title={title}
+            image={image}
+            description={description}
+            category={category}
+            distance={distance}
+            available={true}
+          />       
+
           <div className="borrow-button">
             <ActionButton
               borrowButton={false}
