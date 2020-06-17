@@ -11,22 +11,23 @@ const Award: React.FC = () => {
   return (
     <IonPage>
       <Header title={"BorrowMe"} />
-      <div className="dropDownSliderButton">
+      <div className="dropUpSliderButton">
           <ActionButton
             dropDownButton={false}
             dropDownSliderButton={true}
             borrowButton={false}
             FAQButton={false}
             color="secondary"
-            text="VERLEIHEN"
+            text="LEIHEN"
             icon={chevronDownSharp}
+            chevronDownSharpeSet={true}
           />
         </div>    
       <IonContent color="light" className="content">
         <div>
           <IonCard className="verliehenesCard">
-            <h1 className="verliehenesHeadline">Geliehenes</h1>
-            <p className="verliehenesText">Die Gegenstände, die du dir von anderen Personen geliehen hast.</p>
+            <h1 className="verliehenesHeadline">Verliehenes</h1>
+            <p className="verliehenesText">Die Gegenstände, die du an andere Personene verliehen hast</p>
           </IonCard>
         </div>
         <ActionButton
