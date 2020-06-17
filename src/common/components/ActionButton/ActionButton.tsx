@@ -1,6 +1,7 @@
 import React from 'react';
 import { IonButton, IonIcon } from '@ionic/react';
 import './ActionButton.css';
+import { useHistory } from 'react-router';
 
 
 interface ContainsProps {
@@ -15,15 +16,23 @@ interface ContainsProps {
   text?: string;
   icon?: string;
   color: string;
+
+  openPage?: string;
 }
 
 
 const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButton, 
-  dropDownSliderButton, borrowButton, FAQButton, chevronDownSharpeSet}) => {
+  dropDownSliderButton, borrowButton, FAQButton, chevronDownSharpeSet, openPage}) => {
+
+    const history = useHistory();
 
   var styleClass = "default";
   var content;
   var displayedText;
+
+  const open = (): void => {
+    history.push("/" + openPage)
+  }
 
 
   if (borrowButton) {
@@ -66,7 +75,8 @@ const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButt
   return (
     <IonButton 
       className = { styleClass } 
-      color={ color }  
+      color={ color }
+      onClick={open}
     >{ displayedText } { content }</IonButton>
   );
 };

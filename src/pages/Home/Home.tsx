@@ -47,6 +47,7 @@ const Home: React.FC = () => {
         </IonContent> 
         <div className="dropDownSliderButton">
           <ActionButton
+            openPage="award"
             dropDownButton={false}
             dropDownSliderButton={true}
             borrowButton={false}
