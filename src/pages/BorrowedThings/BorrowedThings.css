@@ -1,0 +1,31 @@
+
+.content {
+
+}
+
+.cardContainer {
+    height: 85%;
+}
+
+.borrowedCard {
+    text-align: center;
+    color: black;
+    padding: 0;
+    margin: 5vw 5vw 0 5vw;
+    z-index: 1;
+    height: 100%;
+}
+
+.headline{
+    color: #FFA400;
+  }
+
+  .cardText {
+    font-size: 15px;
+  }
+
+  .productCard {
+    padding: 0%;
+}
+
+  
