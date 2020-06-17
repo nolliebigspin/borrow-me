@@ -16,11 +16,9 @@ interface props {
 
 const ProductCard: React.FC<props> = ({ title, image, description, category, distance }) => {
   const [showModal, setShowModal] = useState(false);
-  const history = useHistory();
 
-  function openFAQ() {
+  function closeModal() {
     setShowModal(false)
-    history.push('/faq')
   }
 
   return (
@@ -103,23 +101,24 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
           </div>
           <div className="borrow-button">
             <ActionButton
-            borrowButton={false}
-            dropDownButton={false}
-            dropDownSliderButton={false}
-            FAQButton={true}
-            text={"LEIHEN"}
-            color="secondary"
-          /> 
+              borrowButton={false}
+              dropDownButton={false}
+              dropDownSliderButton={false}
+              FAQButton={true}
+              text={"LEIHEN"}
+              color="secondary"
+            /> 
           </div>
-          <div className="faq-button" onClick={() => openFAQ()}>
+          <div className="faq-button" onClick={closeModal}>
             <ActionButton
-            borrowButton={false}
-            dropDownButton={false}
-            dropDownSliderButton={false}
-            FAQButton={true}
-            text={"Fragen?"}
-            color="white"
-          /> 
+              openPage="faq"
+              borrowButton={false}
+              dropDownButton={false}
+              dropDownSliderButton={false}
+              FAQButton={true}
+              text={"FAQ"}
+              color="white"
+            /> 
           </div>
           
         </IonContent>

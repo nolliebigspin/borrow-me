@@ -14,11 +14,15 @@
 .faq-button{
   text-align: center;
   margin-top: 5vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .borrow-button{
   text-align: center;
   margin-top: 30vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .back-Icon{
