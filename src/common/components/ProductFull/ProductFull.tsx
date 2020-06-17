@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductFull.css'
-import { IonCard, IonCardTitle, IonCardContent, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText, IonButton } from '@ionic/react';
+import { IonCard, IonCardTitle, IonCardContent, IonRow, IonImg, IonCol, IonChip, IonLabel, IonText } from '@ionic/react';
 
 interface props {
   title: string;

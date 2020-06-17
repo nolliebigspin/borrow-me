@@ -5,11 +5,12 @@
 
 .backIcon {
   font-size: 30px;
-  margin-top: 3.5vh;
-  margin-left: 3vw;
+  margin-top: 15px;
+  margin-left: 15px;
   cursor: pointer;
   z-index: 11;
-  color: gray;
+  color: white;
+  cursor: pointer;
 }
 
 .send-message-field{
