@@ -54,6 +54,7 @@ const Home: React.FC = () => {
             color="secondary"
             text="VERLEIHEN"
             icon={chevronUpSharp}
+            chevronDownSharpeSet={false}
           />
         </div>     
         <MenuBar />

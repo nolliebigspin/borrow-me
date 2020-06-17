@@ -5,6 +5,12 @@
     text-align: center;
 }
 
+.dropUpSliderButton {
+    text-align: center;
+    z-index: 0;
+    transform: translateY(-11%);
+}
+
 .verliehenesCard {
     text-align: center;
     color: black;
