@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {IonInput, IonIcon} from '@ionic/react';
 import {searchSharp} from 'ionicons/icons';
 import './SearchBar.css';

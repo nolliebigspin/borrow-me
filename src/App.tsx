@@ -34,6 +34,7 @@ import Login from './pages/Login/Login';
 import Search from './pages/Search/Search';
 import FAQ from './pages/FAQ/FAQ';
 import { IonReactRouter } from '@ionic/react-router';
+import Award from './pages/Award/Award';
 
 const App: React.FC = () => (
   <IonApp className="app">
@@ -47,6 +48,7 @@ const App: React.FC = () => (
         <Route path="/feed" component={Feed} />
         <Route path="/messages" component={Messages} />
         <Route path="/login" component={Login} />
+        <Route path="/award" component={Award} />
         <Route path="/" render={() => <Redirect to="/login" />} exact={true} />
       </IonRouterOutlet>
     </IonReactRouter>

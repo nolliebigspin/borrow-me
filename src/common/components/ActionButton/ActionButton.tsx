@@ -10,6 +10,8 @@ interface ContainsProps {
   borrowButton: boolean;
   FAQButton: boolean;
 
+  chevronDownSharpeSet?: boolean;
+
   text?: string;
   icon?: string;
   color: string;
@@ -17,7 +19,7 @@ interface ContainsProps {
 
 
 const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButton, 
-  dropDownSliderButton, borrowButton, FAQButton}) => {
+  dropDownSliderButton, borrowButton, FAQButton, chevronDownSharpeSet}) => {
 
   var styleClass = "default";
   var content;
@@ -33,12 +35,29 @@ const ActionButton: React.FC<ContainsProps> = ({ text, icon, color, dropDownButt
     content = <IonIcon icon={ icon } className="iconDropDown" ></IonIcon>
 
   } else if (dropDownSliderButton) {
-    styleClass = "dropDownSliderButton";
-    content = 
-              <div>
-                <IonIcon icon={ icon}  className="iconDropDownSlider" >  </IonIcon>
-                <p className="textDropDownSlider">{text}</p>
-              </div>
+
+    if (!chevronDownSharpeSet) {
+
+      styleClass = "dropDownSliderButton";
+
+      content = 
+      <div>
+        <IonIcon icon={ icon}  className="iconDropDownSlider" >  </IonIcon>
+        <p className="textDropDownSlider">{text}</p>
+      </div>
+
+    } else if (chevronDownSharpeSet) {
+
+      styleClass = "dropUpSliderButton";
+
+      content = 
+      <div>
+        <p className="textDropUpSlider">{text}</p>
+        <IonIcon icon={ icon}  className="iconDropUpSlider" >  </IonIcon>
+      </div>
+      
+    }
+    
   } else if (FAQButton) {
     styleClass = "FAQButton";
     content = text ;
