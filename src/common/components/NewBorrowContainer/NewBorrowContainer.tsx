@@ -1,12 +1,12 @@
 import React from 'react';
 import './NewBorrowContainer.css';
-import { IonCard, IonInput, IonGrid, IonRow, IonIcon, IonContent, IonCol, IonItem, IonLabel, IonSelect, IonSelectOption, IonTextarea } from '@ionic/react';
+import { IonCard, IonInput, IonGrid, IonRow, IonIcon, IonCol, IonItem, IonLabel, IonSelect, IonSelectOption, IonTextarea } from '@ionic/react';
 import { cameraOutline } from 'ionicons/icons';
 
 const NewBorrowContainer: React.FC = () => {
 
   return (
-    <IonContent className="base">
+    <div className="base">
       <IonGrid>
 
         <IonCard>
@@ -48,7 +48,7 @@ const NewBorrowContainer: React.FC = () => {
         </IonCard>
 
       </IonGrid>
-    </IonContent>
+    </div>
   );
 };
 
