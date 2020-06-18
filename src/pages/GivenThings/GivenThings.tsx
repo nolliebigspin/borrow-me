@@ -19,7 +19,7 @@ const GivenThings: React.FC = () => {
               <div className="productCard">
               <ProductCard
                 title="Säge"
-                image=""
+                image="https://images.unsplash.com/photo-1502068713670-5acaa8128a4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80"
                 description="Säge zu verleihen..."
                 distance="2"
                 category="Werkzeug"
@@ -28,10 +28,10 @@ const GivenThings: React.FC = () => {
             <div className="productCard">
               <ProductCard
                 title="Nähmaschine"
-                image=""
+                image="https://images.unsplash.com/photo-1586440814054-952c96054f37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                 description="Spinnt manchmal, den Trick ..."
-                distance="2"
-                category="Werkzeug"
+                distance="5"
+                category="Nähen"
               />
             </div>
             </IonCard>
