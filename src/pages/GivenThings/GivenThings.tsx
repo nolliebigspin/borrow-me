@@ -23,6 +23,7 @@ const GivenThings: React.FC = () => {
                 description="Säge zu verleihen..."
                 distance="2"
                 category="Werkzeug"
+                my={true}
               />
             </div>
             <div className="productCard">
@@ -32,6 +33,7 @@ const GivenThings: React.FC = () => {
                 description="Spinnt manchmal, den Trick ..."
                 distance="5"
                 category="Nähen"
+                my={true}
               />
             </div>
             </IonCard>

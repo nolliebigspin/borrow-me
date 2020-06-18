@@ -12,10 +12,10 @@ interface props {
   description: string;
   category: string;
   distance: string;
-  aviailable?: boolean;
+  my?: boolean;
 }
 
-const ProductCard: React.FC<props> = ({ title, image, description, category, distance }) => {
+const ProductCard: React.FC<props> = ({ title, image, description, category, distance, my }) => {
   const [showModal, setShowModal] = useState(false);
 
   function closeModal() {
@@ -59,7 +59,7 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
             </IonRow>
           </IonGrid>
         </IonCard>
-      </div>
+      </div>     
       
       <IonModal isOpen={showModal}>
         <Header title={"BorrowMe"}/>
@@ -75,16 +75,19 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
             available={true}
           />       
 
-          <div className="borrow-button">
-            <ActionButton
-              borrowButton={false}
-              dropDownButton={false}
-              dropDownSliderButton={false}
-              FAQButton={true}
-              text={"LEIHEN"}
-              color="secondary"
-            /> 
-          </div>
+          { !my &&
+            <div className="borrow-button">
+              <ActionButton
+                borrowButton={false}
+                dropDownButton={false}
+                dropDownSliderButton={false}
+                FAQButton={true}
+                text={"LEIHEN"}
+                color="secondary"
+              /> 
+            </div>
+          }
+  
           <div className="faq-button" onClick={closeModal}>
             <ActionButton
               openPage="faq"
@@ -96,6 +99,19 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
               color="white"
             /> 
           </div>
+
+          { my &&
+            <div className="borrow-button">
+              <ActionButton
+                borrowButton={false}
+                dropDownButton={false}
+                dropDownSliderButton={false}
+                FAQButton={true}
+                text={"Löschen"}
+                color="danger"
+              /> 
+            </div>
+          }
           
         </IonContent>
       </IonModal>

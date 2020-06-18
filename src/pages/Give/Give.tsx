@@ -13,7 +13,7 @@ const Award: React.FC = () => {
       <Header title={"BorrowMe"} />
       <div className="dropUpSliderButton">
           <ActionButton
-            openPage="borrowed"
+            openPage="home"
             dropDownButton={false}
             dropDownSliderButton={true}
             borrowButton={false}
