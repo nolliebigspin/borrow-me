@@ -5,6 +5,7 @@ import { Header} from '../';
 import ActionButton from '../ActionButton/ActionButton';
 import { arrowBack } from 'ionicons/icons';
 import ProductFull from '../ProductFull/ProductFull';
+import EditGiven from '../EditGiven/EditGiven';
 
 interface props {
   title: string;
@@ -66,14 +67,17 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
         <IonIcon className="backIcon" icon={arrowBack} onClick={() => setShowModal(false)} />
         <IonContent>
         
-          <ProductFull
+          { !my && 
+            <ProductFull
             title={title}
             image={image}
             description={description}
             category={category}
             distance={distance}
             available={true}
-          />       
+            />     
+          }
+            
 
           { !my &&
             <div className="borrow-button">
@@ -86,6 +90,10 @@ const ProductCard: React.FC<props> = ({ title, image, description, category, dis
                 color="secondary"
               /> 
             </div>
+          }
+
+          { my &&
+            <EditGiven/>
           }
   
           <div className="faq-button" onClick={closeModal}>

@@ -1,15 +1,13 @@
-import './ChatCard.css'
+import './EditGiven.css'
 import React from 'react';
 import { IonCard, IonInput, IonGrid, IonRow, IonImg, IonCol, IonItem, IonLabel, IonSelect, IonSelectOption, IonTextarea } from '@ionic/react';
-import ActionButton from '../ActionButton/ActionButton';
 
 const EditGiven: React.FC = () => {
   return (
-    <div  className="container">
-      <div className="base">
+    <div className="base">
         <IonGrid>
           <IonCard>
-            <IonInput className="input" placeholder="Titel"></IonInput>
+            <IonInput className="input" >Säge</IonInput>
           </IonCard>
           <IonRow>
             <IonCard>
@@ -50,34 +48,11 @@ const EditGiven: React.FC = () => {
             </IonCol>
           </IonRow>
 
-          <IonCard>
-            <IonTextarea className="input" rows={8}>Säge zu verleihen, weist Gebrauschspuren auf, ist ansonsten in gutem Zustand</IonTextarea>
+          <IonCard className="descrContainer">
+            <IonTextarea className="descriptionText" rows={8}>Säge zu verleihen, weist Gebrauschspuren auf, ist ansonsten in gutem Zustand</IonTextarea>
           </IonCard>
         </IonGrid>
       </div>
-      <div className="löschenContainer">
-        <ActionButton
-          dropDownButton={false}
-          dropDownSliderButton={false}
-          borrowButton={true}
-          FAQButton={false}
-          color="secondary"
-          text="LÖSCHEN"
-        />
-      </div>
-        <div className="faq-button" >
-          <ActionButton
-            openPage="faq"
-            borrowButton={false}
-            dropDownButton={false}
-            dropDownSliderButton={false}
-            FAQButton={true}
-            text={"FAQ"}
-            color="white"
-          /> 
-        </div>
-    </div>
-    
   );
 };
 
