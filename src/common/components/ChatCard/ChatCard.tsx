@@ -16,7 +16,7 @@ const ChatCard: React.FC<ContainerProps> = ({ contact, image }) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <IonContent color="ligth">
+    <div>
       <IonItem color="light"className="base" onClick={() => setShowModal(true)}>
         <IonAvatar className="avatar">
           <img src={image} alt="" />
@@ -33,7 +33,7 @@ const ChatCard: React.FC<ContainerProps> = ({ contact, image }) => {
           <ChatBubble
             left={true}
             text="Hi! Ist die Bohmaschine gerade zu haben?"
-            image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            image={image}
           />
           <ChatBubble
             left={false}
@@ -43,14 +43,14 @@ const ChatCard: React.FC<ContainerProps> = ({ contact, image }) => {
           <ChatBubble
             left={true}
             text="Oh super, vielen Dank! Ich komme dann gehen 10 Uhr am Vormittag. Muss ich sonst noch was mitbringen?"
-            image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            image={image}
           />
         </IonContent>
         <div className="send-message-field">
           <SendMessageField />
         </div>
       </IonModal>
-    </IonContent>
+    </div>
   );
 };
 
