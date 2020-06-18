@@ -37,12 +37,14 @@ const GivenThings: React.FC = () => {
             </IonCard>
           </div>
           <ActionButton
-                dropDownButton={true}
-                dropDownSliderButton={false}
-                borrowButton={false}
-                FAQButton={false}
-                color="secondary"
-                icon={chevronUpSharp}/>
+            openPage="give"
+            dropDownButton={true}
+            dropDownSliderButton={false}
+            borrowButton={false}
+            FAQButton={false}
+            color="secondary"
+            icon={chevronUpSharp}
+          />
         </IonContent> 
         <MenuBar />
       </IonPage>

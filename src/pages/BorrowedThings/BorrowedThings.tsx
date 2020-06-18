@@ -30,12 +30,14 @@ const BorrowedThings: React.FC = () => {
           </IonCard>
         </div>
         <ActionButton
-              dropDownButton={true}
-              dropDownSliderButton={false}
-              borrowButton={false}
-              FAQButton={false}
-              color="secondary"
-              icon={chevronUpSharp}/>
+          openPage="home"
+          dropDownButton={true}
+          dropDownSliderButton={false}
+          borrowButton={false}
+          FAQButton={false}
+          color="secondary"
+          icon={chevronUpSharp}
+        />
       </IonContent> 
       <MenuBar />
     </IonPage>

@@ -24,12 +24,14 @@ const Home: React.FC = () => {
           </IonCard>
         </div>
         <ActionButton
-              dropDownButton={true}
-              dropDownSliderButton={false}
-              borrowButton={false}
-              FAQButton={false}
-              color="secondary"
-              icon={chevronDownSharp}/>
+          openPage="borrowed"
+          dropDownButton={true}
+          dropDownSliderButton={false}
+          borrowButton={false}
+          FAQButton={false}
+          color="secondary"
+          icon={chevronDownSharp}
+        />
         <IonCard className="chatCard">
           <h1 className="chatHeadline">Das ist gerade los in deiner Nachbarschaft</h1>
             <ChatBubble
@@ -47,7 +49,7 @@ const Home: React.FC = () => {
         </IonContent> 
         <div className="dropDownSliderButton">
           <ActionButton
-            openPage="award"
+            openPage="give"
             dropDownButton={false}
             dropDownSliderButton={true}
             borrowButton={false}

@@ -13,6 +13,7 @@ const Award: React.FC = () => {
       <Header title={"BorrowMe"} />
       <div className="dropUpSliderButton">
           <ActionButton
+            openPage="borrowed"
             dropDownButton={false}
             dropDownSliderButton={true}
             borrowButton={false}
@@ -31,12 +32,14 @@ const Award: React.FC = () => {
           </IonCard>
         </div>
         <ActionButton
-              dropDownButton={true}
-              dropDownSliderButton={false}
-              borrowButton={false}
-              FAQButton={false}
-              color="secondary"
-              icon={chevronDownSharp}/>
+          openPage="given"
+          dropDownButton={true}
+          dropDownSliderButton={false}
+          borrowButton={false}
+          FAQButton={false}
+          color="secondary"
+          icon={chevronDownSharp}
+        />
         <p className="headline" >Etwas neues verleihen</p>
         <NewBorrowContainer/>
         <div className="leihenContainer">
