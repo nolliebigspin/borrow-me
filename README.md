@@ -15,3 +15,5 @@ Share all your stuff with your neighbors, because not everybody needs everything
 
 * `$ npm install <package-name>` only local
 * `$ npm install <package-name> --save` local installation + adding an entry to `package.json`
+
+test
